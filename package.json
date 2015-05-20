@@ -1,0 +1,29 @@
+{
+	"name": "tiadp",
+	"version": "0.0.1",
+	"description": "Uses installrapp.com to create and manage Provisioning Profiles in the Apple Developer Portal.",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": ["titanium", "appcelerator", "installr", "apple developer portal", "provisioning profiles"],
+	"author": "Jeff Bonnes, <jeffb@installrapp.com>",
+	"preferGlobal": true,
+	"bin": {
+		"tiadp": "index.js"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"tiapp.xml": "0.2.2",
+		"colors": "^1.0.3",
+		"underscore": "~1.7.0",
+		"request": "~2.34.0",
+		"fields": "~0.1.12",
+		"keychain": "~0.0.4",
+		"moment":"~2.9.0",
+		"node-ios-device":"*",
+		"http":"*",
+		"fs":"*",
+		"provisioning":"~1.1.0",
+		"node-persist":"*"
+	}
+}
