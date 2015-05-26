@@ -405,9 +405,10 @@ function checkSavedADPCredentials(_callback) {
 
 function promptForADPCredentials(data, _callback) {
 	var formattedCredentials = [];
+	var padding = "                                                      ";
 	for ( i = 0; i < data.length; i++) {
 		var singleDetail = {
-			name : 'Apple Id:' + data[i].login + '  password: ******  team:' + data[i].teamName,
+			name : 'Team:' + (data[i].teamName + padding).substr(0,60) + ' Apple Id: ' + data[i].login,
 			value : JSON.stringify(data[i])
 		};
 		formattedCredentials.push(singleDetail);
